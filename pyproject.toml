@@ -8,8 +8,11 @@ packages = [{include = "aoe_29_discordbot"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = {extras = ["all"], version = "^0.109.0"}
+discord-py-interactions = "^5.11.0"
 
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
