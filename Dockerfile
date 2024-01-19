@@ -8,4 +8,4 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 
 COPY ./aoe_29_discordbot /code/app
 
-CMD ["python", "main.py"]
+CMD ["python", "app/main.py"]
