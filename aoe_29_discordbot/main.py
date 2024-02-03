@@ -18,6 +18,7 @@ guild_id = "1043068096954515487"
 
 greeting = os.environ.get("GREETING", "Hello World")
 logging.info(f"Using greeting: {greeting}")
+logging.error(f"Using greeting: {greeting}")
 print(greeting)
 
 
