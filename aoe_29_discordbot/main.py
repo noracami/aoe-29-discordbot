@@ -1,4 +1,5 @@
 import asyncio
+import logging
 import os
 from interactions import Client, Intents, listen, slash_command, SlashContext
 
@@ -16,6 +17,7 @@ bot_token = os.environ.get("BOT_TOKEN")
 guild_id = "1043068096954515487"
 
 greeting = os.environ.get("GREETING", "Hello World")
+logging.info(f"Using greeting: {greeting}")
 print(greeting)
 
 
