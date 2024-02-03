@@ -15,6 +15,9 @@ bot = Client(intents=intents)
 bot_token = os.environ.get("BOT_TOKEN")
 guild_id = "1043068096954515487"
 
+greeting = os.environ.get("GREETING", "Hello World")
+print(greeting)
+
 
 @listen()  # this decorator tells snek that it needs to listen for the corresponding event, and run this coroutine
 async def on_ready():
